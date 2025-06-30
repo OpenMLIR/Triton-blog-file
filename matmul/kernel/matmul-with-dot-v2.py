@@ -30,10 +30,11 @@ def matrix_multiplication_kernel(
 
     # 沿N维度按块累加
     for n in range(0, tl.cdiv(N, BLOCK_SIZE_N)):
-        max_idx = N - n * BLOCK_SIZE_N
+        offset_n = n * BLOCK_SIZE_N
+        max_idx = N - offset_n
         # 加载A和B的块
-        a = tl.load(a_ptrs + n * BLOCK_SIZE_N * stride_an, mask=offs_n[None, :] < max_idx, other=0.0)
-        b = tl.load(b_ptrs + n * BLOCK_SIZE_N * stride_bn, mask=offs_n[:, None] < max_idx, other=0.0)
+        a = tl.load(a_ptrs + offset_n * stride_an, mask=offs_n[None, :] < max_idx, other=0.0)
+        b = tl.load(b_ptrs + offset_n * stride_bn, mask=offs_n[:, None] < max_idx, other=0.0)
         # 计算a @ b，累加到 accumulator
         accumulator = tl.dot(a, b, acc=accumulator)
 

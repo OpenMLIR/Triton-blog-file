@@ -1,0 +1,67 @@
+[](https://github.com/OpenMLIR/Triton-blog-file/blob/main/matmul/with_dot_v2/MLIR/) vs [01-source.mlir](https://github.com/OpenMLIR/Triton-blog-file/blob/main/matmul/with_dot_v2/MLIR/01-source.mlir)
+
+[02-Inliner.mlir](https://github.com/OpenMLIR/Triton-blog-file/blob/main/matmul/with_dot_v2/MLIR/02-Inliner.mlir) vs [03-Canonicalizer.mlir](https://github.com/OpenMLIR/Triton-blog-file/blob/main/matmul/with_dot_v2/MLIR/03-Canonicalizer.mlir)
+
+[03-Canonicalizer.mlir](https://github.com/OpenMLIR/Triton-blog-file/blob/main/matmul/with_dot_v2/MLIR/03-Canonicalizer.mlir) vs [04-Canonicalizer.mlir](https://github.com/OpenMLIR/Triton-blog-file/blob/main/matmul/with_dot_v2/MLIR/04-Canonicalizer.mlir)
+
+[04-Canonicalizer.mlir](https://github.com/OpenMLIR/Triton-blog-file/blob/main/matmul/with_dot_v2/MLIR/04-Canonicalizer.mlir) vs [05-Canonicalizer.mlir](https://github.com/OpenMLIR/Triton-blog-file/blob/main/matmul/with_dot_v2/MLIR/05-Canonicalizer.mlir)
+
+[05-Canonicalizer.mlir](https://github.com/OpenMLIR/Triton-blog-file/blob/main/matmul/with_dot_v2/MLIR/05-Canonicalizer.mlir) vs [06-Canonicalizer.mlir](https://github.com/OpenMLIR/Triton-blog-file/blob/main/matmul/with_dot_v2/MLIR/06-Canonicalizer.mlir)
+
+[10-TritonReorderBroadcast.mlir](https://github.com/OpenMLIR/Triton-blog-file/blob/main/matmul/with_dot_v2/MLIR/10-TritonReorderBroadcast.mlir) vs [11-CSE.mlir](https://github.com/OpenMLIR/Triton-blog-file/blob/main/matmul/with_dot_v2/MLIR/11-CSE.mlir)
+
+[13-TritonLoopUnroll.mlir](https://github.com/OpenMLIR/Triton-blog-file/blob/main/matmul/with_dot_v2/MLIR/13-TritonLoopUnroll.mlir) vs [14-ConvertTritonToTritonGPU.mlir](https://github.com/OpenMLIR/Triton-blog-file/blob/main/matmul/with_dot_v2/MLIR/14-ConvertTritonToTritonGPU.mlir)
+
+[14-ConvertTritonToTritonGPU.mlir](https://github.com/OpenMLIR/Triton-blog-file/blob/main/matmul/with_dot_v2/MLIR/14-ConvertTritonToTritonGPU.mlir) vs [15-TritonGPUCoalesce.mlir](https://github.com/OpenMLIR/Triton-blog-file/blob/main/matmul/with_dot_v2/MLIR/15-TritonGPUCoalesce.mlir)
+
+[17-TritonGPUPlanCTAPass.mlir](https://github.com/OpenMLIR/Triton-blog-file/blob/main/matmul/with_dot_v2/MLIR/17-TritonGPUPlanCTAPass.mlir) vs [18-TritonGPURemoveLayoutConversions.mlir](https://github.com/OpenMLIR/Triton-blog-file/blob/main/matmul/with_dot_v2/MLIR/18-TritonGPURemoveLayoutConversions.mlir)
+
+[19-TritonGPUOptimizeThreadLocality.mlir](https://github.com/OpenMLIR/Triton-blog-file/blob/main/matmul/with_dot_v2/MLIR/19-TritonGPUOptimizeThreadLocality.mlir) vs [20-TritonGPUAccelerateMatmul.mlir](https://github.com/OpenMLIR/Triton-blog-file/blob/main/matmul/with_dot_v2/MLIR/20-TritonGPUAccelerateMatmul.mlir)
+
+[20-TritonGPUAccelerateMatmul.mlir](https://github.com/OpenMLIR/Triton-blog-file/blob/main/matmul/with_dot_v2/MLIR/20-TritonGPUAccelerateMatmul.mlir) vs [21-TritonGPURemoveLayoutConversions.mlir](https://github.com/OpenMLIR/Triton-blog-file/blob/main/matmul/with_dot_v2/MLIR/21-TritonGPURemoveLayoutConversions.mlir)
+
+[24-TritonNvidiaGPUOptimizeDescriptorEncodingPass.mlir](https://github.com/OpenMLIR/Triton-blog-file/blob/main/matmul/with_dot_v2/MLIR/24-TritonNvidiaGPUOptimizeDescriptorEncodingPass.mlir) vs [25-TritonLoopAwareCSE.mlir](https://github.com/OpenMLIR/Triton-blog-file/blob/main/matmul/with_dot_v2/MLIR/25-TritonLoopAwareCSE.mlir)
+
+[28-TritonLoopInvariantCodeMotion.mlir](https://github.com/OpenMLIR/Triton-blog-file/blob/main/matmul/with_dot_v2/MLIR/28-TritonLoopInvariantCodeMotion.mlir) vs [29-TritonGPUOptimizeAccumulatorInit.mlir](https://github.com/OpenMLIR/Triton-blog-file/blob/main/matmul/with_dot_v2/MLIR/29-TritonGPUOptimizeAccumulatorInit.mlir)
+
+[29-TritonGPUOptimizeAccumulatorInit.mlir](https://github.com/OpenMLIR/Triton-blog-file/blob/main/matmul/with_dot_v2/MLIR/29-TritonGPUOptimizeAccumulatorInit.mlir) vs [30-TritonGPUHoistTMEMAlloc.mlir](https://github.com/OpenMLIR/Triton-blog-file/blob/main/matmul/with_dot_v2/MLIR/30-TritonGPUHoistTMEMAlloc.mlir)
+
+[31-TritonNvidiaGPUPromoteLHSToTMemPass.mlir](https://github.com/OpenMLIR/Triton-blog-file/blob/main/matmul/with_dot_v2/MLIR/31-TritonNvidiaGPUPromoteLHSToTMemPass.mlir) vs [32-TritonGPUAssignLatencies.mlir](https://github.com/OpenMLIR/Triton-blog-file/blob/main/matmul/with_dot_v2/MLIR/32-TritonGPUAssignLatencies.mlir)
+
+[32-TritonGPUAssignLatencies.mlir](https://github.com/OpenMLIR/Triton-blog-file/blob/main/matmul/with_dot_v2/MLIR/32-TritonGPUAssignLatencies.mlir) vs [33-TritonGPUScheduleLoops.mlir](https://github.com/OpenMLIR/Triton-blog-file/blob/main/matmul/with_dot_v2/MLIR/33-TritonGPUScheduleLoops.mlir)
+
+[37-TritonGPURewritePartitionDependencies.mlir](https://github.com/OpenMLIR/Triton-blog-file/blob/main/matmul/with_dot_v2/MLIR/37-TritonGPURewritePartitionDependencies.mlir) vs [38-SCCP.mlir](https://github.com/OpenMLIR/Triton-blog-file/blob/main/matmul/with_dot_v2/MLIR/38-SCCP.mlir)
+
+[42-TritonGPUScheduleLoops.mlir](https://github.com/OpenMLIR/Triton-blog-file/blob/main/matmul/with_dot_v2/MLIR/42-TritonGPUScheduleLoops.mlir) vs [43-TritonGPUPipeline.mlir](https://github.com/OpenMLIR/Triton-blog-file/blob/main/matmul/with_dot_v2/MLIR/43-TritonGPUPipeline.mlir)
+
+[44-TritonGPUCombineTensorSelectAndIf.mlir](https://github.com/OpenMLIR/Triton-blog-file/blob/main/matmul/with_dot_v2/MLIR/44-TritonGPUCombineTensorSelectAndIf.mlir) vs [45-TritonNvidiaGPURemoveTMEMTokensPass.mlir](https://github.com/OpenMLIR/Triton-blog-file/blob/main/matmul/with_dot_v2/MLIR/45-TritonNvidiaGPURemoveTMEMTokensPass.mlir)
+
+[45-TritonNvidiaGPURemoveTMEMTokensPass.mlir](https://github.com/OpenMLIR/Triton-blog-file/blob/main/matmul/with_dot_v2/MLIR/45-TritonNvidiaGPURemoveTMEMTokensPass.mlir) vs [46-Canonicalizer.mlir](https://github.com/OpenMLIR/Triton-blog-file/blob/main/matmul/with_dot_v2/MLIR/46-Canonicalizer.mlir)
+
+[46-Canonicalizer.mlir](https://github.com/OpenMLIR/Triton-blog-file/blob/main/matmul/with_dot_v2/MLIR/46-Canonicalizer.mlir) vs [47-TritonLoopAwareCSE.mlir](https://github.com/OpenMLIR/Triton-blog-file/blob/main/matmul/with_dot_v2/MLIR/47-TritonLoopAwareCSE.mlir)
+
+[53-TritonGPURemoveLayoutConversions.mlir](https://github.com/OpenMLIR/Triton-blog-file/blob/main/matmul/with_dot_v2/MLIR/53-TritonGPURemoveLayoutConversions.mlir) vs [54-TritonNvidiaGPUInterleaveTMemPass.mlir](https://github.com/OpenMLIR/Triton-blog-file/blob/main/matmul/with_dot_v2/MLIR/54-TritonNvidiaGPUInterleaveTMemPass.mlir)
+
+[60-TritonGPUFenceInsertion.mlir](https://github.com/OpenMLIR/Triton-blog-file/blob/main/matmul/with_dot_v2/MLIR/60-TritonGPUFenceInsertion.mlir) vs [61-SCCP.mlir](https://github.com/OpenMLIR/Triton-blog-file/blob/main/matmul/with_dot_v2/MLIR/61-SCCP.mlir)
+
+[64-TritonGPUCombineTensorSelectAndIf.mlir](https://github.com/OpenMLIR/Triton-blog-file/blob/main/matmul/with_dot_v2/MLIR/64-TritonGPUCombineTensorSelectAndIf.mlir) vs [65-TritonGPUAllocateWarpGroups.mlir](https://github.com/OpenMLIR/Triton-blog-file/blob/main/matmul/with_dot_v2/MLIR/65-TritonGPUAllocateWarpGroups.mlir)
+
+[65-TritonGPUAllocateWarpGroups.mlir](https://github.com/OpenMLIR/Triton-blog-file/blob/main/matmul/with_dot_v2/MLIR/65-TritonGPUAllocateWarpGroups.mlir) vs [66-SCFToControlFlowPass.mlir](https://github.com/OpenMLIR/Triton-blog-file/blob/main/matmul/with_dot_v2/MLIR/66-SCFToControlFlowPass.mlir)
+
+[66-SCFToControlFlowPass.mlir](https://github.com/OpenMLIR/Triton-blog-file/blob/main/matmul/with_dot_v2/MLIR/66-SCFToControlFlowPass.mlir) vs [67-AllocateSharedMemory.mlir](https://github.com/OpenMLIR/Triton-blog-file/blob/main/matmul/with_dot_v2/MLIR/67-AllocateSharedMemory.mlir)
+
+[67-AllocateSharedMemory.mlir](https://github.com/OpenMLIR/Triton-blog-file/blob/main/matmul/with_dot_v2/MLIR/67-AllocateSharedMemory.mlir) vs [68-TritonTensorMemoryAllocationPass.mlir](https://github.com/OpenMLIR/Triton-blog-file/blob/main/matmul/with_dot_v2/MLIR/68-TritonTensorMemoryAllocationPass.mlir)
+
+[68-TritonTensorMemoryAllocationPass.mlir](https://github.com/OpenMLIR/Triton-blog-file/blob/main/matmul/with_dot_v2/MLIR/68-TritonTensorMemoryAllocationPass.mlir) vs [69-TritonGPUGlobalScratchAllocationPass.mlir](https://github.com/OpenMLIR/Triton-blog-file/blob/main/matmul/with_dot_v2/MLIR/69-TritonGPUGlobalScratchAllocationPass.mlir)
+
+[70-TritonGPUProxyFenceInsertion.mlir](https://github.com/OpenMLIR/Triton-blog-file/blob/main/matmul/with_dot_v2/MLIR/70-TritonGPUProxyFenceInsertion.mlir) vs [71-ConvertTritonGPUToLLVM.mlir](https://github.com/OpenMLIR/Triton-blog-file/blob/main/matmul/with_dot_v2/MLIR/71-ConvertTritonGPUToLLVM.mlir)
+
+[71-ConvertTritonGPUToLLVM.mlir](https://github.com/OpenMLIR/Triton-blog-file/blob/main/matmul/with_dot_v2/MLIR/71-ConvertTritonGPUToLLVM.mlir) vs [72-Canonicalizer.mlir](https://github.com/OpenMLIR/Triton-blog-file/blob/main/matmul/with_dot_v2/MLIR/72-Canonicalizer.mlir)
+
+[72-Canonicalizer.mlir](https://github.com/OpenMLIR/Triton-blog-file/blob/main/matmul/with_dot_v2/MLIR/72-Canonicalizer.mlir) vs [73-CSE.mlir](https://github.com/OpenMLIR/Triton-blog-file/blob/main/matmul/with_dot_v2/MLIR/73-CSE.mlir)
+
+[73-CSE.mlir](https://github.com/OpenMLIR/Triton-blog-file/blob/main/matmul/with_dot_v2/MLIR/73-CSE.mlir) vs [74-ConvertNVGPUToLLVM.mlir](https://github.com/OpenMLIR/Triton-blog-file/blob/main/matmul/with_dot_v2/MLIR/74-ConvertNVGPUToLLVM.mlir)
+
+[76-ReconcileUnrealizedCastsPass.mlir](https://github.com/OpenMLIR/Triton-blog-file/blob/main/matmul/with_dot_v2/MLIR/76-ReconcileUnrealizedCastsPass.mlir) vs [77-Canonicalizer.mlir](https://github.com/OpenMLIR/Triton-blog-file/blob/main/matmul/with_dot_v2/MLIR/77-Canonicalizer.mlir)
+
+[77-Canonicalizer.mlir](https://github.com/OpenMLIR/Triton-blog-file/blob/main/matmul/with_dot_v2/MLIR/77-Canonicalizer.mlir) vs [78-CSE.mlir](https://github.com/OpenMLIR/Triton-blog-file/blob/main/matmul/with_dot_v2/MLIR/78-CSE.mlir)

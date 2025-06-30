@@ -217,7 +217,7 @@ $L__tmp1:
 	.loc	2 40 22                         // standard.py:40:22 @[ matmul.py:32:33 ]
 	add.s32 	%r30, %r99, 63;
 $L__tmp2:
-	.loc	1 38 32                         // matmul.py:38:32
+	.loc	1 39 32                         // matmul.py:39:32
 	shr.u32 	%r400, %r1, 5;
 	shfl.sync.idx.b32 	%r32, %r400, 0, 31, -1;
 	shl.b32 	%r401, %r32, 21;
@@ -248,9 +248,9 @@ $L__tmp2:
 	// end inline asm
 	setp.lt.s32 	%p6, %r30, 64;
 	setp.gt.s32 	%p7, %r30, 63;
-	.loc	1 35 82                         // matmul.py:35:82
+	.loc	1 36 74                         // matmul.py:36:74
 	setp.lt.s32 	%p8, %r29, %r99;
-	.loc	1 35 20                         // matmul.py:35:20
+	.loc	1 36 20                         // matmul.py:36:20
 	and.b32 	%r406, %r1, 1;
 	neg.s32 	%r407, %r406;
 	shl.b32 	%r408, %r1, 9;
@@ -381,7 +381,7 @@ $L__tmp2:
 	cp.async.cg.shared.global [ %r201 + 0 ], [ %rd46 + 0 ], 0x10, %r174;
 	// end inline asm
 	cp.async.commit_group;
-	.loc	1 36 82                         // matmul.py:36:82
+	.loc	1 37 74                         // matmul.py:37:74
 	setp.lt.s32 	%p9, %r5, %r99;
 	setp.lt.s32 	%p10, %r6, %r99;
 	setp.lt.s32 	%p11, %r7, %r99;
@@ -390,7 +390,7 @@ $L__tmp2:
 	setp.lt.s32 	%p14, %r10, %r99;
 	setp.lt.s32 	%p15, %r11, %r99;
 	setp.lt.s32 	%p16, %r12, %r99;
-	.loc	1 36 20                         // matmul.py:36:20
+	.loc	1 37 20                         // matmul.py:37:20
 	and.b32 	%r454, %r407, 144;
 	bfe.u32 	%r455, %r1, 4, 1;
 	shl.b32 	%r456, %r1, 7;
@@ -603,11 +603,11 @@ $L__tmp2:
 	cp.async.commit_group;
 	.loc	1 32 22                         // matmul.py:32:22
 	setp.gt.s32 	%p17, %r30, 127;
-	.loc	1 33 22                         // matmul.py:33:22
+	.loc	1 34 22                         // matmul.py:34:22
 	add.s32 	%r501, %r99, -64;
-	.loc	1 35 82                         // matmul.py:35:82
+	.loc	1 36 74                         // matmul.py:36:74
 	setp.lt.s32 	%p18, %r29, %r501;
-	.loc	1 35 29                         // matmul.py:35:29
+	.loc	1 36 29                         // matmul.py:36:29
 	add.s64 	%rd79, %rd31, 256;
 	add.s64 	%rd80, %rd32, 256;
 	add.s64 	%rd81, %rd33, 256;
@@ -624,7 +624,7 @@ $L__tmp2:
 	add.s64 	%rd92, %rd44, 256;
 	add.s64 	%rd93, %rd45, 256;
 	add.s64 	%rd94, %rd46, 256;
-	.loc	1 35 20                         // matmul.py:35:20
+	.loc	1 36 20                         // matmul.py:36:20
 	bar.sync 	0;
 	add.s32 	%r502, %r103, 32768;
 	add.s32 	%r267, %r502, %r421;
@@ -694,7 +694,7 @@ $L__tmp2:
 	cp.async.cg.shared.global [ %r297 + 0 ], [ %rd94 + 0 ], 0x10, %r270;
 	// end inline asm
 	cp.async.commit_group;
-	.loc	1 36 82                         // matmul.py:36:82
+	.loc	1 37 74                         // matmul.py:37:74
 	setp.lt.s32 	%p19, %r5, %r501;
 	setp.lt.s32 	%p20, %r6, %r501;
 	setp.lt.s32 	%p21, %r7, %r501;
@@ -703,9 +703,9 @@ $L__tmp2:
 	setp.lt.s32 	%p24, %r10, %r501;
 	setp.lt.s32 	%p25, %r11, %r501;
 	setp.lt.s32 	%p26, %r12, %r501;
-	.loc	1 36 48                         // matmul.py:36:48
+	.loc	1 37 40                         // matmul.py:37:40
 	shl.b32 	%r76, %r101, 6;
-	.loc	1 36 29                         // matmul.py:36:29
+	.loc	1 37 29                         // matmul.py:37:29
 	mul.wide.s32 	%rd179, %r76, 4;
 	add.s64 	%rd95, %rd47, %rd179;
 	add.s64 	%rd96, %rd95, 4;
@@ -739,7 +739,7 @@ $L__tmp2:
 	add.s64 	%rd124, %rd123, 4;
 	add.s64 	%rd125, %rd123, 8;
 	add.s64 	%rd126, %rd123, 12;
-	.loc	1 36 20                         // matmul.py:36:20
+	.loc	1 37 20                         // matmul.py:37:20
 	add.s32 	%r504, %r103, 114688;
 	add.s32 	%r299, %r504, %r463;
 	add.s32 	%r301, %r504, %r467;
@@ -887,10 +887,10 @@ $L__tmp2:
 	cp.async.ca.shared.global [ %r361 + 0 ], [ %rd126 + 0 ], 0x4, %r358;
 	// end inline asm
 	cp.async.commit_group;
-	.loc	1 35 20                         // matmul.py:35:20
+	.loc	1 36 20                         // matmul.py:36:20
 	cp.async.wait_group 	2;
 	bar.sync 	0;
-	.loc	1 38 32                         // matmul.py:38:32
+	.loc	1 39 32                         // matmul.py:39:32
 	setp.ne.s32 	%p27, %r32, 0;
 	or.pred 	%p28, %p6, %p27;
 	@%p28 bra 	$L__BB0_2;
@@ -993,11 +993,11 @@ $L__BB0_2:
 	.loc	1 32 22                         // matmul.py:32:22
 	setp.gt.s32 	%p46, %r30, 191;
 	setp.lt.s32 	%p47, %r30, 128;
-	.loc	1 33 22                         // matmul.py:33:22
+	.loc	1 34 22                         // matmul.py:34:22
 	add.s32 	%r662, %r99, -128;
-	.loc	1 35 82                         // matmul.py:35:82
+	.loc	1 36 74                         // matmul.py:36:74
 	setp.lt.s32 	%p48, %r29, %r662;
-	.loc	1 35 29                         // matmul.py:35:29
+	.loc	1 36 29                         // matmul.py:36:29
 	add.s64 	%rd213, %rd31, 512;
 	add.s64 	%rd214, %rd32, 512;
 	add.s64 	%rd215, %rd33, 512;
@@ -1014,7 +1014,7 @@ $L__BB0_2:
 	add.s64 	%rd226, %rd44, 512;
 	add.s64 	%rd227, %rd45, 512;
 	add.s64 	%rd228, %rd46, 512;
-	.loc	1 35 20                         // matmul.py:35:20
+	.loc	1 36 20                         // matmul.py:36:20
 	bar.sync 	0;
 	add.s32 	%r665, %r103, 65536;
 	add.s32 	%r564, %r665, %r421;
@@ -1084,7 +1084,7 @@ $L__BB0_2:
 	cp.async.cg.shared.global [ %r594 + 0 ], [ %rd228 + 0 ], 0x10, %r567;
 	// end inline asm
 	cp.async.commit_group;
-	.loc	1 36 82                         // matmul.py:36:82
+	.loc	1 37 74                         // matmul.py:37:74
 	setp.lt.s32 	%p49, %r5, %r662;
 	setp.lt.s32 	%p50, %r6, %r662;
 	setp.lt.s32 	%p51, %r7, %r662;
@@ -1093,9 +1093,9 @@ $L__BB0_2:
 	setp.lt.s32 	%p54, %r10, %r662;
 	setp.lt.s32 	%p55, %r11, %r662;
 	setp.lt.s32 	%p56, %r12, %r662;
-	.loc	1 36 48                         // matmul.py:36:48
+	.loc	1 37 40                         // matmul.py:37:40
 	shl.b32 	%r682, %r101, 7;
-	.loc	1 36 29                         // matmul.py:36:29
+	.loc	1 37 29                         // matmul.py:37:29
 	mul.wide.s32 	%rd261, %r682, 4;
 	add.s64 	%rd229, %rd47, %rd261;
 	add.s64 	%rd230, %rd229, 4;
@@ -1129,7 +1129,7 @@ $L__BB0_2:
 	add.s64 	%rd258, %rd257, 4;
 	add.s64 	%rd259, %rd257, 8;
 	add.s64 	%rd260, %rd257, 12;
-	.loc	1 36 20                         // matmul.py:36:20
+	.loc	1 37 20                         // matmul.py:37:20
 	add.s32 	%r684, %r103, 131072;
 	add.s32 	%r596, %r684, %r463;
 	add.s32 	%r598, %r684, %r467;
@@ -1305,7 +1305,7 @@ $L__BB0_2:
 $L__BB0_6:                              //   in Loop: Header=BB0_4 Depth=1
 	.loc	1 32 22                         // matmul.py:32:22
 	setp.lt.s64 	%p76, %rd395, %rd26;
-	.loc	1 38 32                         // matmul.py:38:32
+	.loc	1 39 32                         // matmul.py:39:32
 	// begin inline asm
 	
 {
@@ -1325,9 +1325,9 @@ $L__BB0_6:                              //   in Loop: Header=BB0_4 Depth=1
 	add.s32 	%r885, %r1130, 1;
 	setp.gt.s32 	%p78, %r885, 2;
 	selp.b32 	%r1130, 0, %r885, %p78;
-	.loc	1 35 82                         // matmul.py:35:82
+	.loc	1 36 74                         // matmul.py:36:74
 	setp.lt.s32 	%p79, %r29, %r1124;
-	.loc	1 35 29                         // matmul.py:35:29
+	.loc	1 36 29                         // matmul.py:36:29
 	mul.wide.s32 	%rd344, %r1125, 4;
 	add.s64 	%rd296, %rd31, %rd344;
 	add.s64 	%rd297, %rd32, %rd344;
@@ -1345,7 +1345,7 @@ $L__BB0_6:                              //   in Loop: Header=BB0_4 Depth=1
 	add.s64 	%rd309, %rd44, %rd344;
 	add.s64 	%rd310, %rd45, %rd344;
 	add.s64 	%rd311, %rd46, %rd344;
-	.loc	1 35 20                         // matmul.py:35:20
+	.loc	1 36 20                         // matmul.py:36:20
 	shl.b32 	%r886, %r1130, 15;
 	add.s32 	%r888, %r103, %r886;
 	bar.sync 	0;
@@ -1416,7 +1416,7 @@ $L__BB0_6:                              //   in Loop: Header=BB0_4 Depth=1
 	cp.async.cg.shared.global [ %r817 + 0 ], [ %rd311 + 0 ], 0x10, %r790;
 	// end inline asm
 	cp.async.commit_group;
-	.loc	1 36 82                         // matmul.py:36:82
+	.loc	1 37 74                         // matmul.py:37:74
 	setp.lt.s32 	%p80, %r5, %r1124;
 	setp.lt.s32 	%p81, %r6, %r1124;
 	setp.lt.s32 	%p82, %r7, %r1124;
@@ -1425,7 +1425,7 @@ $L__BB0_6:                              //   in Loop: Header=BB0_4 Depth=1
 	setp.lt.s32 	%p85, %r10, %r1124;
 	setp.lt.s32 	%p86, %r11, %r1124;
 	setp.lt.s32 	%p87, %r12, %r1124;
-	.loc	1 36 29                         // matmul.py:36:29
+	.loc	1 37 29                         // matmul.py:37:29
 	mul.wide.s32 	%rd345, %r1126, 4;
 	add.s64 	%rd312, %rd47, %rd345;
 	add.s64 	%rd313, %rd312, 4;
@@ -1459,7 +1459,7 @@ $L__BB0_6:                              //   in Loop: Header=BB0_4 Depth=1
 	add.s64 	%rd341, %rd340, 4;
 	add.s64 	%rd342, %rd340, 8;
 	add.s64 	%rd343, %rd340, 12;
-	.loc	1 36 20                         // matmul.py:36:20
+	.loc	1 37 20                         // matmul.py:37:20
 	shl.b32 	%r906, %r1130, 14;
 	add.s32 	%r907, %r103, %r906;
 	add.s32 	%r908, %r907, 98304;
@@ -1626,24 +1626,24 @@ $L__BB0_4:                              // =>This Inner Loop Header: Depth=1
 	add.s32 	%r728, %r1129, 1;
 	setp.gt.s32 	%p58, %r728, 2;
 	selp.b32 	%r1129, 0, %r728, %p58;
-	.loc	1 35 20                         // matmul.py:35:20
+	.loc	1 36 20                         // matmul.py:36:20
 	cp.async.wait_group 	2;
 	bar.sync 	0;
 	.loc	1 32 22                         // matmul.py:32:22
 	shl.b32 	%r729, %r1131, 3;
 	add.s32 	%r731, %r103, %r729;
 	add.s32 	%r1133, %r731, 147456;
-	.loc	1 38 32                         // matmul.py:38:32
+	.loc	1 39 32                         // matmul.py:39:32
 	@%p27 bra 	$L__BB0_6;
 // %bb.5:                               //   in Loop: Header=BB0_4 Depth=1
-	.loc	1 36 20                         // matmul.py:36:20
+	.loc	1 37 20                         // matmul.py:37:20
 	shl.b32 	%r748, %r1129, 14;
 	add.s32 	%r750, %r103, %r748;
 	add.s32 	%r751, %r750, 98304;
-	.loc	1 35 20                         // matmul.py:35:20
+	.loc	1 36 20                         // matmul.py:36:20
 	shl.b32 	%r752, %r1129, 15;
 	add.s32 	%r753, %r103, %r752;
-	.loc	1 38 32                         // matmul.py:38:32
+	.loc	1 39 32                         // matmul.py:39:32
 	elect.sync 	%r754|%p60, -1;
 	bfe.u32 	%r755, %r753, 4, 14;
 	cvt.u64.u32 	%rd280, %r755;
@@ -1757,7 +1757,7 @@ $L__BB0_7:                              // %._crit_edge
 	.loc	1 32 22                         // matmul.py:32:22
 	@%p6 bra 	$L__BB0_9;
 // %bb.8:
-	.loc	1 38 32                         // matmul.py:38:32
+	.loc	1 39 32                         // matmul.py:39:32
 	// begin inline asm
 	
 {
@@ -1888,7 +1888,7 @@ $L__BB0_9:
 	and.pred 	%p105, %p122, %p125;
 	and.pred 	%p106, %p123, %p125;
 	and.pred 	%p107, %p124, %p125;
-	.loc	1 38 32                         // matmul.py:38:32
+	.loc	1 39 32                         // matmul.py:39:32
 	// begin inline asm
 	tcgen05.ld.sync.aligned.32x32b.x64.b32 {%r948, %r949, %r950, %r951, %r952, %r953, %r954, %r955, %r956, %r957, %r958, %r959, %r960, %r961, %r962, %r963, %r964, %r965, %r966, %r967, %r968, %r969, %r970, %r971, %r972, %r973, %r974, %r975, %r976, %r977, %r978, %r979, %r980, %r981, %r982, %r983, %r984, %r985, %r986, %r987, %r988, %r989, %r990, %r991, %r992, %r993, %r994, %r995, %r996, %r997, %r998, %r999, %r1000, %r1001, %r1002, %r1003, %r1004, %r1005, %r1006, %r1007, %r1008, %r1009, %r1010, %r1011}, [%r1012 + 0];
 	// end inline asm

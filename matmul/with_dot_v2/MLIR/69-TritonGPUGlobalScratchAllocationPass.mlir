@@ -7,8 +7,8 @@
 #loc = loc("/home/ubuntu/triton/matmul.py":6:0)
 #loc1 = loc(unknown)
 #loc24 = loc("/home/ubuntu/triton/matmul.py":32:22)
-#loc25 = loc("/home/ubuntu/triton/matmul.py":35:20)
-#loc26 = loc("/home/ubuntu/triton/matmul.py":36:20)
+#loc25 = loc("/home/ubuntu/triton/matmul.py":36:20)
+#loc26 = loc("/home/ubuntu/triton/matmul.py":37:20)
 #shared = #ttg.swizzled_shared<{vec = 1, perPhase = 1, maxPhase = 1, order = [0]}>
 #shared1 = #ttg.nvmma_shared<{swizzlingByteWidth = 128, transposed = false, elementBitWidth = 32}>
 #shared2 = #ttg.nvmma_shared<{swizzlingByteWidth = 128, transposed = true, elementBitWidth = 32}>
@@ -135,7 +135,7 @@ module attributes {ttg.global_scratch_memory_alignment = 1 : i32, ttg.global_scr
     %97 = ttg.async_commit_group %96 loc(#loc26)
     %98 = arith.subi %30, %c1_i32 : i32 loc(#loc24)
     cf.br ^bb1(%c0_i32, %c0_i32, %c1_i32, %c2_i32, %c0_i32, %63, %86, %74, %97, %32, %c0_i32, %40, %48 : i32, i32, i32, i32, i32, !ttg.async.token, !ttg.async.token, !ttg.async.token, !ttg.async.token, !ttg.memdesc<1xi64, #shared, #smem, mutable, 2>, i32, !ttg.memdesc<128x64xf32, #shared1, #smem, mutable, 3x128x64>, !ttg.memdesc<64x64xf32, #shared2, #smem, mutable, 3x64x64>) loc(#loc24)
-  ^bb1(%99: i32 loc("/home/ubuntu/triton/matmul.py":32:22), %100: i32 loc(unknown), %101: i32 loc(unknown), %102: i32 loc(unknown), %103: i32 loc(unknown), %104: !ttg.async.token loc("/home/ubuntu/triton/matmul.py":35:20), %105: !ttg.async.token loc("/home/ubuntu/triton/matmul.py":35:20), %106: !ttg.async.token loc("/home/ubuntu/triton/matmul.py":36:20), %107: !ttg.async.token loc("/home/ubuntu/triton/matmul.py":36:20), %108: !ttg.memdesc<1xi64, #shared, #smem, mutable, 2> loc("/home/ubuntu/triton/matmul.py":32:22), %109: i32 loc(unknown), %110: !ttg.memdesc<128x64xf32, #shared1, #smem, mutable, 3x128x64> loc("/home/ubuntu/triton/matmul.py":35:20), %111: !ttg.memdesc<64x64xf32, #shared2, #smem, mutable, 3x64x64> loc("/home/ubuntu/triton/matmul.py":36:20)):  // 2 preds: ^bb0, ^bb2
+  ^bb1(%99: i32 loc("/home/ubuntu/triton/matmul.py":32:22), %100: i32 loc(unknown), %101: i32 loc(unknown), %102: i32 loc(unknown), %103: i32 loc(unknown), %104: !ttg.async.token loc("/home/ubuntu/triton/matmul.py":36:20), %105: !ttg.async.token loc("/home/ubuntu/triton/matmul.py":36:20), %106: !ttg.async.token loc("/home/ubuntu/triton/matmul.py":37:20), %107: !ttg.async.token loc("/home/ubuntu/triton/matmul.py":37:20), %108: !ttg.memdesc<1xi64, #shared, #smem, mutable, 2> loc("/home/ubuntu/triton/matmul.py":32:22), %109: i32 loc(unknown), %110: !ttg.memdesc<128x64xf32, #shared1, #smem, mutable, 3x128x64> loc("/home/ubuntu/triton/matmul.py":36:20), %111: !ttg.memdesc<64x64xf32, #shared2, #smem, mutable, 3x64x64> loc("/home/ubuntu/triton/matmul.py":37:20)):  // 2 preds: ^bb0, ^bb2
     %112 = arith.cmpi slt, %99, %98 : i32 loc(#loc24)
     cf.cond_br %112, ^bb2, ^bb3 loc(#loc24)
   ^bb2:  // pred: ^bb1
@@ -237,14 +237,14 @@ module attributes {ttg.global_scratch_memory_alignment = 1 : i32, ttg.global_scr
 #loc20 = loc("/home/ubuntu/triton/python/triton/language/standard.py":40:22)
 #loc21 = loc("/home/ubuntu/triton/matmul.py":32:33)
 #loc22 = loc("/home/ubuntu/triton/python/triton/language/standard.py":40:28)
-#loc23 = loc("/home/ubuntu/triton/matmul.py":38:32)
-#loc27 = loc("/home/ubuntu/triton/matmul.py":35:82)
-#loc28 = loc("/home/ubuntu/triton/matmul.py":36:82)
-#loc29 = loc("/home/ubuntu/triton/matmul.py":33:22)
-#loc30 = loc("/home/ubuntu/triton/matmul.py":35:29)
-#loc31 = loc("/home/ubuntu/triton/matmul.py":36:48)
-#loc32 = loc("/home/ubuntu/triton/matmul.py":36:29)
-#loc33 = loc("/home/ubuntu/triton/matmul.py":33:26)
+#loc23 = loc("/home/ubuntu/triton/matmul.py":39:32)
+#loc27 = loc("/home/ubuntu/triton/matmul.py":36:74)
+#loc28 = loc("/home/ubuntu/triton/matmul.py":37:74)
+#loc29 = loc("/home/ubuntu/triton/matmul.py":34:22)
+#loc30 = loc("/home/ubuntu/triton/matmul.py":36:29)
+#loc31 = loc("/home/ubuntu/triton/matmul.py":37:40)
+#loc32 = loc("/home/ubuntu/triton/matmul.py":37:29)
+#loc33 = loc("/home/ubuntu/triton/matmul.py":33:23)
 #loc34 = loc("/home/ubuntu/triton/matmul.py":42:39)
 #loc35 = loc("/home/ubuntu/triton/matmul.py":42:21)
 #loc36 = loc("/home/ubuntu/triton/matmul.py":42:51)
