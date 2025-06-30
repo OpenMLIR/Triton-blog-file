@@ -35,13 +35,11 @@ def matrix_multiplication_kernel(
         a = tl.load(a_ptrs + n * BLOCK_SIZE_N * stride_an, mask=offs_n[None, :] < max_idx, other=0.0)
         b = tl.load(b_ptrs + n * BLOCK_SIZE_N * stride_bn, mask=offs_n[:, None] < max_idx, other=0.0)
         # 计算a @ b，累加到 accumulator
-        accumulator += tl.dot(a, b)
+        accumulator = tl.dot(a, b, acc=accumulator)
 
     # 将结果写回C
     c_ptrs = c_ptr + offs_m[:, None] * stride_cm + offs_k[None, :] * stride_ck
-    offs_cm = pid_m * BLOCK_SIZE_M + tl.arange(0, BLOCK_SIZE_M)
-    offs_ck = pid_k * BLOCK_SIZE_K + tl.arange(0, BLOCK_SIZE_K)
-    c_mask = (offs_cm[:, None] < M) & (offs_ck[None, :] < K)
+    c_mask = (offs_m[:, None] < M) & (offs_k[None, :] < K)
     tl.store(c_ptrs, accumulator, mask=c_mask)
 
 # a_ptr, b_ptr, c_ptr are raw device pointers
